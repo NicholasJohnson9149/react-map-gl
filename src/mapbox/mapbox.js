@@ -125,7 +125,7 @@ export default class Mapbox {
 
       console.debug(`react-map-gl: ${VERSION} using mapbox-gl v${props.mapboxgl.version}`); // eslint-disable-line
 
-      this._checkStyleSheet(props.mapboxgl.version);
+      this._checkStyleSheet(props.mapboxgl.version || '0.47.0');
     }
 
     this.props = {};
